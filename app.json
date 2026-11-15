@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "ذِكرى",
+    "slug": "zikra-memories-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "zikra",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0E0F13"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.zikramemories"
+    },
+    "android": {
+      "package": "com.yourname.zikramemories",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0E0F13"
+      },
+      "permissions": []
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "يحتاج ذِكرى إلى الوصول لصورك لإضافتها إلى الذكريات."
+        }
+      ]
+    ],
+    "extra": {
+      "router": {}
+    }
+  }
+}
